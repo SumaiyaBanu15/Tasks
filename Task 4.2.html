@@ -13,17 +13,17 @@
                 let data = JSON.parse(this.responseText)
                 // console.log(data)
 
-                for(let i=0;i<data.length;i++)
-                {
-                    console.log(data[i].flags);
-                }
+                // for(let i=0;i<data.length;i++)
+                // {
+                //     console.log(data[i].flags);
+                // }
 
                 //   or
 
-                // for(e in data)
-                // {
-                //     console.log(data[e].flags);
-                // }
+                for(e in data)
+                {
+                    console.log(data[e].flags);
+                }
 
                 //   or
 
@@ -32,6 +32,30 @@
                 //     console.log(e.flags);
                 
                 // }
+
+                console.log("Name, region, subregion, population of all countries")
+
+                //  for(let i=0;i<data.length;i++)
+                // {
+                //     console.log(data[i].name, data[i].region, data[i].subregion, data[i].population);
+                // }
+
+                //   or
+
+                // for(i in data)
+                // {
+                //     console.log(data[i].name, data[i].region, data[i].subregion, data[i].population);
+                // }
+
+                //   or
+
+                for(e of data)
+                {
+                    console.log(e.name, e.region, e.subregion, e.population);
+                }
+                
+
+
             }
                 const req = new XMLHttpRequest();
             req.addEventListener('load',handleData)
