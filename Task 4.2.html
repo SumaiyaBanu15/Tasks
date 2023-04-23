@@ -12,19 +12,27 @@
                 console.log("Flags of all Countries")
                 let data = JSON.parse(this.responseText)
                 // console.log(data)
+
                 for(let i=0;i<data.length;i++)
                 {
-                    console.log(data[i].flags)
+                    console.log(data[i].flags);
                 }
 
-                  
+                //   or
+
+                // for(e in data)
+                // {
+                //     console.log(data[e].flags);
+                // }
+
+                //   or
 
                 // for(e of data)
                 // {
-                //     console.log(e.name.common,e.population)
+                //     console.log(e.flags);
                 
+                // }
             }
-
                 const req = new XMLHttpRequest();
             req.addEventListener('load',handleData)
             // req.onload = (res)=>{
