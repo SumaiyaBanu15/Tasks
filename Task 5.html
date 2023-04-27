@@ -12,17 +12,17 @@
     <script>
         // IIFE
 // print odd numbers in an array
-(function odd()
-{
-    for (let i=1; i<=10; i++)
-    {
-        if(i%2 != 0)
-        {
-        console.log(i)
-        }
+// (function odd()
+// {
+//     for (let i=1; i<=10; i++)
+//     {
+//         if(i%2 != 0)
+//         {
+//         console.log(i)
+//         }
     
-    }
-})([1,2,3,4,5,6,7,8,9,10])
+//     }
+// })([1,2,3,4,5,6,7,8,9,10])
 
 // sum of all numbers in an array
 // (function sum()
@@ -36,6 +36,24 @@
 //         console.log(sum);
 
 // })([1,2,3,4,5,6,7,8,9,10])
+
+// Remove duplictaes from an array
+
+(function removeDuplicate (prevValue, curValue)
+{
+    if(prevValue.includes(curValue))
+    {
+        return prevValue;
+    }
+    else
+    {
+        return [...prevValue,curValue];
+    }
+
+}
+)(num = [1,2,4,5,2,3,5,6,8,1])
+console.log(num.reduce(removeDuplicate,[]));
+
 
 
     </script>

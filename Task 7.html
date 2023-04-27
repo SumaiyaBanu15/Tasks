@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    <h2>
+        filter Function, reduce Function & forEach Function
+    </h2>
+    <script>
+
+function handleData(){
+
+                
+let data = JSON.parse(this.responseText)
+ console.log(data)
+// All countries from Asian continent / region Using filter function
+
+// function asianContinent(value)
+// {
+//  for(let i=0; i<=data.length; i++)
+
+// console.log(data.filter(asianContinent));
+// }
+
+// All countries Name, capital, flag
+ data.forEach((e)=>{
+ console.log(e.name, e.capital, e.flag);  
+})
+
+
+}
+
+const req = new XMLHttpRequest();
+req.addEventListener('load',handleData)
+// req.onload = (res)=>{
+// console.log(JSON.parse(res.srcElement.responseText))
+// }
+req.open("GET","https://restcountries.com/v3.1/all")
+req.send()
+
+// All countries from Asian continent / region Using filter function
+
+
+
+    </script>
+    
+</body>
+</html>
