@@ -28,26 +28,46 @@
                 // {
                 //     console.log(e.name.common,e.population)
                 // }
-
+// MAP FUNCTION
+                //   let country= data.map((e)=>e.name.common)
+                // or
+                //   let country = data.map((e)=>{
+                //     return e.name.common
+                // })
                 // let country= data.map((e)=>`${e.name.common}-${e.population}`)
-                // console.log(country);
-              // let country = data.filter((e)=>{
+                //  console.log(country);
 
-                let a=[1,2,3,4,5] 
-           let sum = a.reduce((accumulator,currentvalue)=>{
-            return accumulator+currentvalue
-           } )
-           console.log(sum);
+// FILTER FUNCTION
+               let country = data.filter((e)=>e.continents[0]=="North America")
+            //   let country = data.filter((e)=>{
+            //     if(e.continents[0]=="North America")
+            //     {
+            //         return true;
+            //     } else{
+            //         return false;
+            //     }
+            // })
+                console.log(country);
+
+// REDUCE FUNCTION
+        //         let a=[1,2,3,4,5] 
+        //    let sum = a.reduce((accumulator,currentvalue)=>{
+        //     // return accumulator+currentvalue
+        //     return accumulator*currentvalue
+        //    } )
+        //    console.log(sum);
+
+
             }
             // {
             //     console.log(JSON.parse(this.responseText))
             // }
 
             const req = new XMLHttpRequest();
-            // req.addEventListener('load',handleData)
-            req.onload = (res)=>{
-                console.log(JSON.parse(res.srcElement.responseText))
-            }
+            req.addEventListener('load',handleData)
+            // req.onload = (res)=>{
+            //     console.log(JSON.parse(res.srcElement.responseText))
+            // }
             req.open("GET","https://restcountries.com/v3.1/all")
             req.send()
         </script>
