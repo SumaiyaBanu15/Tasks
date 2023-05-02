@@ -16,20 +16,20 @@ function handleData(){
 let data = JSON.parse(this.responseText)
 // console.log(data)
 
-// for(let i=0;i<data.length;i++)
-// {
-//     console.log(data[i].name.common,data[i].population)
-// }
+for(let i=0;i<data.length;i++)
+{
+    console.log(data[i].name.common,data[i].population)
+}
 
-// for(i in data)
-// {
-//     console.log(data[i].name.common)
-// }
+for(i in data)
+{
+    console.log(data[i].name.common)
+}
 
-// for(e of data)
-// {
-//     console.log(e.name.common,e.population)
-// }
+for(e of data)
+{
+    console.log(e.name.common,e.population)
+}
 
 //  forEach 
 data.forEach((e)=>{
