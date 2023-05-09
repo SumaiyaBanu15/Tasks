@@ -19,17 +19,17 @@ let data = JSON.parse(this.responseText)
  console.log(data)
 
 // 1. All countries from Asian continent / region Using filter function
-let country1 = data.filter((e)=>
-{
-    if(e.continents[0] == "Asia" || e.region[0] == "Asia")
-    {
-    return true;
-    }
-    else{
-        return false;
-    }
-}) 
-console.log(country1);
+// let country1 = data.filter((e)=>
+// {
+//     if(e.continents[0] == "Asia" || e.region[0] == "Asia")
+//     {
+//     return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }) 
+// console.log(country1);
 
 
 // 2. Countries population less than 2 lakhs using filter()\
@@ -47,26 +47,32 @@ console.log(country1);
 
 
 // 3. All countries Name, capital, flag
-//  data.forEach((e)=>{
-//  console.log(e.name, e.capital, e.flag);  
-// })
+ data.forEach((e)=>{
+ console.log(e.name, e.capital, e.flag);  
+})
 
 
 // 4. Total population of countries using reduce()
-// let country3 = data.reduce((population(previousValue, currentValue))=>{
-// return previousValue+currentValue;
-// })
+
+// let country3 = data.reduce((previousValue, currentValue) => 
+// {
+// return previousValue + currentValue.population;
+// }, 0)
 // console.log(country3);
 
 
 // 5. Countries which uses US dollar as currency
 //  let country4= data.filter((e)=>{
-//     if(e.currencies.name == "United States dollar")
+
+//     for(let i in e.currencies)
+//     {
+//     if(e.currencies[i].name == "United States dollar")
 //     {
 //         return true;
 //     }
 //     else{
 //         return false;
+//     }
 //     }
 //  })
 //  console.log(country4);
