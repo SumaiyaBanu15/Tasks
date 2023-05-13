@@ -1,0 +1,18 @@
+.button:hover{
+    color: azure;
+    background-color:blueviolet
+
+}
+
+a:visited{
+    color: deeppink;
+}
+
+a:link{
+    color: brown
+}
+
+.button:link{
+
+    background-color:rgb(9, 162, 162)
+}

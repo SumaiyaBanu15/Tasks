@@ -1,0 +1,21 @@
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-items{
+    border:1px solid black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.sign{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.login{
+    grid-column: 2;
+    grid-row: 1;
+}
