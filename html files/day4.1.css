@@ -1,0 +1,13 @@
+.fa-bar-icon{
+    display:none;
+}
+@media(max-width:768px){
+    nav ul {
+        display:none;
+    }
+
+    .fa-bar-icon{
+        display: block;
+        font-size: 20px;
+    }
+}

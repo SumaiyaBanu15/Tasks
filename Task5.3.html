@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5.3</title>
+</head>
+<body><h3>Anonymous Function</h3>
+    <script>
+        // Print odd numbers in an array
+        (function()
+{
+    for (let i=1; i<=10; i++)
+    {
+        if(i%2 != 0)
+        {
+        console.log(i)
+        }
+    
+    }
+})([1,2,3,4,5,6,7,8,9,10]);
+
+// sum of all numbers in an array
+// (function ()
+// {
+//     let sum=0;
+//     for (let i=0; i<=10; i++)
+//     {
+//         sum=sum + i;
+//         console.log(i,sum);
+//     }
+//         console.log(sum);
+
+// })([1,2,3,4,5,6,7,8,9,10]);
+
+// // Remove duplictaes from an array
+
+// (function (prevValue, curValue)
+// {
+//     if(prevValue.includes(curValue))
+//     { 
+//         return prevValue;
+//     }
+//     else
+//     {
+//         return [...prevValue,curValue];
+//     }
+
+// }
+// (num.reduce((),[]))
+
+// )([1,2,4,5,2,3,5,6,8,1])
+
+// Return all prime numbers in an array
+
+// let primeNumber = (function()
+//     {
+//         let isPrimeNumber = num =>{
+//         for(let i=2; i<num; i++)
+//         {
+//             if(num % i === 0)
+//             {
+//                 return false;
+//             }
+//         }
+//         return true;
+//         }
+//      let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+//      return arr.filter(num => isPrimeNumber(num));
+//     }) ();
+
+//     console.log(primeNumber);
+
+// //   title cap all the string in an array  
+
+//    (function()
+//    {
+
+//     let arr = ["this is a javascript","title cap","string array"];
+
+//     for (let i = 0; i < arr.length; i++) {
+//   let strArr = arr[i].toLowerCase();
+//   let splitArr = strArr.split(' ');
+//   let titleCap = splitArr.map(word => {
+//     return (word.charAt(0).toUpperCase() + word.slice(1));
+//   });
+//   let joinArr = titleCap.join(' ');
+//   arr[i] = joinArr;
+// }
+// console.log(arr);
+// }) ();
+
+
+
+    </script>
+</body>
+</html>

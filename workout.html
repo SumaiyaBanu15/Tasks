@@ -60,23 +60,64 @@
 // }) ();
 
 // Remove duplictaes from an array
- let arr = [1,2,2,3,4,4,5,6];
+//  let arr = [1,2,2,3,4,4,5,6];
 
- let removeDuplicates = arr.reduce((prevValue,curValue) =>
-{
-    if(prevValue.includes(curValue))
-    { 
-        return prevValue;
-    }
-    else
-    {
-        return [...prevValue,curValue];
-    }
+//  let removeDuplicates = arr.reduce((prevValue,curValue) =>
+// {
+//     if(prevValue.includes(curValue))
+//     { 
+//         return prevValue;
+//     }
+//     else
+//     {
+//         return [...prevValue,curValue];
+//     }
 
-}
+// }
 
-)();
-console.log(removeDuplicates);
+// )();
+// console.log(removeDuplicates);
+ 
+// Return all palindrome in an array
+  
+// let arr = ["Malayalam", 12121, "level", 2222, "Hello", 2341, "Madam"];
+
+// (function isPalindrome(arr){
+
+// let palindrome = [];
+// for(let i=0; i<arr.length; i++){
+//     let str = arr[i].toString();
+//     let reversed = str.split('').reverse().join('');
+
+//     if(str === reversed){
+//         palindrome.push(arr[i]);
+//     }
+// }
+
+// return palindromeisPalindrome(arr);
+// })
+
+
+// (function(strArr)
+// {
+//     function isPalindrome(str){
+//         let reversed = str.split("").reverse().join("");
+//         return str === reversed;
+//     }
+
+//  let palindrome = [];
+//  for(let i=0; i<strArr.length; i++)
+//  {
+//     if(isPalindrome(strArr[i])){
+//         palindrome.push(strArr[i]);
+//     }
+//  }
+//  console.log(palindrome);
+// })(arr);
+
+   
+
+
     </script>
 </body>
 </html>
