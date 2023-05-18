@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Update Page</title>
+</head>
+<body>
+    <div class="whole">
+    <div class="header">
+        <h1>Event 1</h1>
+        <p>Number of available seats : 23</p>
+        </div>
+        <br/>
+        <div class="container">
+            <div class="grid-items">
+                <img src="https://th.bing.com/th/id/OIP.YpQ0oZGLK4k09k6sq354OwHaHx?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image Icon" width="140px" border="1px">
+            </div>
+            <div class="forms"> 
+                <form>
+
+                <div class="names"> 
+                <label for="name">Name :</label>
+                <input id="name" type="text" name="Name">
+                </div><br/>
+
+                <div class="emails">
+                <label for="email">Email :</label>
+                <input id="email" type="email" name="Email">
+                </div><br/>
+
+                <div class="phones">
+                <label for="phone">Phone Number :</label>
+                <input id="phone" type="number" name="Phone"><br/>
+                </div> <br/>
+
+                <div class="seates">
+                <label for="seats">Number of Seats :</label>
+                <select name="seat" id="seats">
+                    <option value="select any option">Select one option &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>                   <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                </div> <br/>
+
+                <div class="attendees">
+                <label for="attendee">Name of Attendee 2 :</label>
+                <input id="attendee" type="text" name="Attendee"> <br/>
+                </div> <br/>
+
+                <div class="buttons">
+                <button type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button">Cancel</button>
+                </div>
+            
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .whole{
+    border:1px solid black;
+    }
+    .header{
+        text-align: center;
+    }
+    h1{
+        font-family:cursive;
+    }
+    p{
+        font-size: larger;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns:  1fr 2fr;
+        border: 1px solid black;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+    }
+    .grid-items{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left:40px;
+        grid-row:1 / span 6;
+        grid-column: 1;
+        
+    
+    }
+
+    .forms{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 50px;
+        text-align: right;
+    }
+    .names{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .emails{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .phones{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .seates{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .attendees{
+        grid-column: 2;
+        grid-row:5;
+    }
+    .buttons{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    button:hover{
+        background-color: rgb(112, 112, 237);
+    }
+    </style>
+</body>
+</html>
