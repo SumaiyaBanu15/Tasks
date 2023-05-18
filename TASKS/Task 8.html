@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <div>
+   <form action="./Task 8.1.html" method="get">
+    <label for="name1">Name :</label> 
+    &nbsp; &nbsp; &nbsp; &nbsp;
+  <input id="name1" name="FirstName" required type="text" placeholder="First Name">
+  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <input id="name2" name="LastName"  required type="text" placeholder="Last Name">
+<br/>
+<br/>
+
+<label for="mail">Email Id :</label>
+&nbsp; &nbsp;
+<input id="mail" type="email" name="Email" required placeholder="your Email Id">
+<br/>
+<br/>
+
+<label for="experience">Your Experience : </label>
+&nbsp; &nbsp;
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+
+<p>Overall how would you rate your experience with us?</p>
+ 
+ <table>
+       
+<tr class="gray"><td>
+<label>How satisfied are you with :</label>
+</td></tr>
+
+<tr class="lightgray"><td>
+<input id="Verysatisfied"
+ type="radio" Value="Very Satisfied" name="performance">
+<label for="Verysatisfied"> Very Satisfied</label>
+
+<input id="satisfied"
+ type="radio" Value="Satisfied" name="performance">
+<label for="satisfied"> Satisfied</label>
+ 
+<input id="Unsatisfied"
+ type="radio" Value="Unatisfied" name="performance">
+<label for="Unsatisfied"> Unsatisfied</label>
+</td></tr>
+
+<tr class="gray"><td>
+<label>How likely are you to :</label>
+</td></tr>
+
+<tr class="lightgray"><td>
+<input id="Verylikely"
+ type="radio" Value="Very Likely" name="ourlike">
+<label for="Verylikely"> Very Likely</label>
+&nbsp;&nbsp;
+<input id="likely"
+ type="radio" Value="Likely" name="ourlike">
+<label for="likely"> Likely</label>
+&nbsp;&nbsp;&nbsp; 
+<input id="Unlikely"
+ type="radio" Value="Unlikely" name="ourlike">
+<label for="Unlikely"> Unlikely</label>
+</tr>
+</table>
+<br/>
+
+<label for="area">Additional comments and suggestion</label>
+<br/>
+<br/>
+<input required type="textarea" id="area" style="width: 490px; height: 200px;">
+<br/>
+<br/>
+<button type="submit">Submit</button>
+
+</form>
+</div>
+   <style>
+    div{
+        font-size: larger;
+        background-color: #eeeaea;
+    }
+    .checked{
+        color: orange;
+    }
+
+    .gray{
+     background-color: rgb(210, 208, 208);
+    }
+
+    .lightgray{
+        background-color:antiquewhite;
+    }
+
+    button{
+        
+        width: 100px;
+        height: 30px;
+    }
+    button:hover{
+        background-color: rgb(67, 67, 233);
+    }
+    table{
+        width: 500px;
+    }
+   </style>
+</body>
+</html>

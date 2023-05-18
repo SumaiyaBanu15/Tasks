@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+<!-- <div id="firstDiv">
+
+</div> -->
+<div id="secondDiv">
+
+</div>
+ <div id="thirdDiv">
+
+</div>
+<script>
+// // create a paragraph element 
+// let paragraph = document.createElement('p');
+
+// // set the content to the paragraph element
+// paragraph.textContent="This is a paragraph tag";
+
+// //append the paragraph to the body
+// document.body.appendChild(paragraph);
+
+
+// let h1 = document.createElement('h1');
+// h1.textContent = "Dynamic Heading";
+// document.body.appendChild(h1); appendChild = single value
+// document.body.append(h1, paragraph); append = multiple values
+
+// document.getElementById('firstDiv').append(h1,paragraph);
+
+let link = document.createElement('a');
+// set the attribute and element
+link.href = "https://www.google.com";
+
+link.textContent = "Visit google.com";
+
+document.getElementById('secondDiv').appendChild(link);
+
+let logo = document.createElement('img');
+// googlelogo.src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
+logo.setAttribute('src', 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+document.getElementById('thirdDiv').appendChild(logo);
+
+</script>
+
+
+</body>
+</html>
