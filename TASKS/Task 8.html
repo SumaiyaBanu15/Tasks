@@ -10,7 +10,9 @@
 </head>
 <body>
     <div>
+        <h2>Survey Form</h2>
    <form action="./Task 8.1.html" method="get">
+    <div class="whole">
     <label for="name1">Name :</label> 
     &nbsp; &nbsp; &nbsp; &nbsp;
   <input id="name1" name="FirstName" required type="text" placeholder="First Name">
@@ -82,13 +84,24 @@
 <br/>
 <br/>
 <button type="submit">Submit</button>
-
+</div>
 </form>
 </div>
    <style>
+    
     div{
-        font-size: larger;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 30px;
+        font-size: large;
         background-color: #eeeaea;
+    }
+    h2{
+        text-align: center;
+        padding-top: 10px;
+    }
+    form{
+        padding-left: 170px;
     }
     .checked{
         color: orange;
@@ -106,12 +119,14 @@
         
         width: 100px;
         height: 30px;
+    
     }
     button:hover{
         background-color: rgb(67, 67, 233);
     }
     table{
         width: 500px;
+    
     }
    </style>
 </body>
