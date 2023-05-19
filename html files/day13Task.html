@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+</head>
+<body>
+    <div id="firstDiv">
+
+    </div>
+
+    <script>
+     let obj1=['Name', 'Age', 'Country'];
+     let obj2=['John', 29, 'USA'];
+     let obj3=['Marshal', 25, 'UK'];
+
+     let list ='<table>';
+        obj1.forEach((items) => {
+            list = list + '<thead>' + items + '</thead>';
+        })
+         
+        obj2.forEach((items) => {
+            list=list + '<tbody>' + '<tr>' + items + '</tr>' + '</tbody>';
+        })
+
+        obj3.forEach((items) => {
+            list=list + '<tbody>' + '<tr>' + items + '</tr>' + '</tbody>';
+        })
+
+
+        list += '</table>';
+
+        document.getElementById('firstDiv').innerHTML = list;
+
+    </script>
+</body>
+</html>
