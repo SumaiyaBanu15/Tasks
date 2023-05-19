@@ -9,7 +9,8 @@
 <body>
     <h2> Arrow function </h2>
     <script>
-// // print odd numbers in an array
+
+// // A. print odd numbers in an array
  let odd =(numbers)=>
 {
     for (let i=1; i<10; i++)
@@ -25,58 +26,79 @@
  let numbers=[1,2,3,4,5,6,7,8,9,10];
  (odd(numbers));
 
-// // sum of all numbers in an array
-// let sum = (num)=>
-// {
-//     let sum=0;
-//     for (let i=0; i<=10; i++)
-//     {
-//         sum=sum + i;
-//         console.log(i,sum);
-//     }
-//       return sum 
+//  B. Title cap all the string in an array  
 
-// }
-// let num = [1,2,3,4,5,6,7,8,9,10];
-// console.log(sum(num));
+  let arr = ["this is a javascript","title cap","string array"];
 
-// // Return all prime numbers in an array
+  let titlecapArray = arr.map(stringArr =>
+{
 
-// let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+  let strArr = stringArr.toLowerCase();
+  let splitArr = strArr.split(' ');
+  let titleCap = splitArr.map(word => {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  });
+  return titleCap.join(' ');
 
-//         let isPrimeNumber = num =>{
-//         for(let i=2; i<num; i++)
-//         {
-//             if(num % i === 0)
-//             {
-//                 return false;
-//             }
-//         }
-//         return true;
-//         }
+})
+console.log(titlecapArray);
+
+
+// // C. sum of all numbers in an array
+let sum = (num)=>
+{
+    let sum=0;
+    for (let i=0; i<=10; i++)
+    {
+        sum=sum + i;
+        console.log(i,sum);
+    }
+      return sum
+
+}
+let num = [1,2,3,4,5,6,7,8,9,10];
+console.log(sum(num));
+
+// // D. Return all prime numbers in an array
+
+let arr1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+
+        let isPrimeNumber = num =>{
+        for(let i=2; i<num; i++)
+        {
+            if(num % i === 0)
+            {
+                return false;
+            }
+        }
+        return true;
+        }
     
-//      let primeNumber = arr.filter(isPrimeNumber);
-//      console.log(primeNumber);
+     let primeNumber = arr1.filter(isPrimeNumber);
+     console.log(primeNumber);
 
-// // title cap all the string in an array  
+// E. Return all the palindrome in an array
 
-//   let arr = ["this is a javascript","title cap","string array"];
+let arr2 = ["Malayalam", 12121, "level", 2222, "Hello", 2341, "Madam"];
 
-//   let titlecapArray = arr.map(stringArr =>
-// {
+let isPalindrome =(arr)=>
+{
 
-//   let strArr = stringArr.toLowerCase();
-//   let splitArr = strArr.split(' ');
-//   let titleCap = splitArr.map(word => {
-//     return (word.charAt(0).toUpperCase() + word.slice(1));
-//   });
-//   return titleCap.join(' ');
+let palindrome = [];
+for(let i=0; i<arr.length; i++){
+    let str = arr[i].toString().toLowerCase();
+    let reversed = str.split('').reverse().join('');
 
-// })
-// console.log(titlecapArray);
+    if(str === reversed){
+        palindrome.push(arr[i]);
+    }
+}
 
+console.log(palindrome);
+} 
+ isPalindrome(arr2);
 
-
+  
 
     </script>
 </body>
