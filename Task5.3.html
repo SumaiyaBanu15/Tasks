@@ -131,6 +131,22 @@ console.log(uniqueValue);
 
 }) ([1,2,4,5,2,3,5,6,8,1]);
 
+// H. Rotate an array by K times
+
+let rotate = function(arr5,k){
+
+    let deletedArray = arr5.splice(arr5.length-k)
+    for(let i=0; i<deletedArray.length; i++){
+        arr5.splice(i,0,deletedArray[i]);
+    }
+    return arr5;
+}
+
+let arr5 = [1,2,3,4,5,6];
+let k = 3;
+
+console.log(rotate(arr5, k));
+
 </script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Update Page</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="whole">
+        <div class="header">
+        <h1>Event 1</h1>
+        <p>Number of available seats : 23</p>
+        </div>
+        <br/>
+        <div class="container text-center">
+            <div class="row">
+                <img src="https://th.bing.com/th/id/OIP.YpQ0oZGLK4k09k6sq354OwHaHx?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image Icon" width="140px" class="img-thumbnail border border-dark">
+            </div>
+            <div class="forms"> 
+                <form>
+
+                <div class="input-group mb-3 col-2"> 
+                    <div class="row">
+                <label for="name" class="form-label" >Name :</label>
+                <input id="name" type="text" name="Name" class="form-control">
+                </div>
+                </div><br/>
+
+                <div class="input-group mb-3 col-2">
+                    <div class="row">
+                <label for="email" class="form-label">Email :</label>
+                <input id="email" type="email" name="Email" class="form-control">
+                </div>
+                </div><br/>
+
+                <div class="input-group mb-3 col-2">
+                    <div class="row">
+                <label for="phone" class="form-label">Phone Number :</label>
+                <input id="phone" type="number" name="Phone" class="form-input"><br/>
+                </div> 
+                </div><br/>
+
+                <div class="input-group mb-3 col-2">
+                    <div class="row">
+                <label for="seats" class="form-label">Number of Seats :</label>
+                <select name="seat" id="seats" class="form-select">
+                    <option class="selected" value="select any option">Select one option &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>                   
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                </div>
+                </div> <br/>
+
+                <div class="input-group mb-3 col-2">
+                    <div class="row">
+                <label for="attendee" class="form-label">Name of Attendee 2 :</label>
+                <input id="attendee" type="text" name="Attendee" class="form-control"> <br/>
+                </div> 
+                </div><br/>
+
+                <div class="input-group mb-3 col-2">
+                    <div class="row">
+                <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+            
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* .whole{
+    border:1px solid black;
+    margin-left: 50px;
+    margin-right: 50px; 
+    margin-top: 100px; 
+
+    }
+    .header{
+        text-align: center;
+    }
+    h1{
+        font-family:cursive;
+    }
+    p{
+        font-size: larger;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns:  1fr 1.5fr;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        /* align-content: center; */
+
+    /* } */
+    /* .grid-items{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        /* padding-left:30px; */
+        /* padding-right: 30px; */
+        /* grid-row:1 / span 6;
+        grid-column: 1;
+        
+    
+    }
+
+    .forms{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-right: 30px;
+        text-align: right;
+    } */
+    </style>
+</body>
+</html>

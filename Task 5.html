@@ -12,17 +12,17 @@
     <script>
         // IIFE
 //  A. print odd numbers in an array
-(function odd()
-{
-    for (let i=1; i<=10; i++)
-    {
-        if(i%2 != 0)
-        {
-        console.log(i)
-        }
+// (function odd()
+// {
+//     for (let i=1; i<=10; i++)
+//     {
+//         if(i%2 != 0)
+//         {
+//         console.log(i)
+//         }
     
-    }
-})([1,2,3,4,5,6,7,8,9,10])
+//     }
+// })([1,2,3,4,5,6,7,8,9,10])
 
 // B. Title cap all the string in an array  
 
@@ -129,6 +129,18 @@
 // let uniqueValue = arr.reduce(removeDuplicate, []);
 // console.log(uniqueValue);
 // })([1,2,4,5,2,3,5,6,8,1])
+
+// H. Rotate an array by k times
+(function(arr5,k){
+
+let deletedArray = arr5.splice(arr5.length-k)
+for(let i=0; i<deletedArray.length; i++){
+    arr5.splice(i,0,deletedArray[i]);
+}
+console.log(arr5);
+
+}) ([1,2,3,4,5,6,7,8], 3);
+
 
 
     </script>
