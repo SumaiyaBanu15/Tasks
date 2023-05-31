@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chain</title>
+</head>
+<body>
+    <button onclick="fetchData()">Fetch Data</button>
+
+    <script>
+
+        let userId = 1;
+
+        function fetchData(){
+            getUserDetails(userId)
+            .then(user => getUserDetails(user.id))
+            .then(posts => getUsercomments(posts[0].id))
+            .then(comments => console.log(comments))
+        }
+
+        function getUserComments(postId){
+            return fetch
+        }
+    </script>
+</body>
+</html>

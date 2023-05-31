@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Recap</title>
+
+
+</head>
+<body>
+  
+    <!-- Task 1 -->
+<!-- <span id="spanColor"> Welcome with smile </span>
+<br>
+<br> -->
+    <!-- Task 2 -->
+<!-- <span id="spanPrompt">Your Name</span>
+<br>
+<br>
+<button onclick="myFunction()">Click</button> -->
+
+    <!-- Task 3 -->
+
+ <h1 onclick="showCoordinates(event)"> DOM
+  <p>
+    Hi, Welcome you all 
+  </p>
+</h1>   
+<span id="cooridnates"></span>
+
+<script>
+
+    // Task 3
+    
+  function showCoordinates(){
+   let header = document.getElementById('head');
+
+   let x = event.clientX;
+   let y = event.clientY;
+
+   let spanCoordinates = document.getElementById('coordinates');
+
+   spanCoordinates.textContent = `coordinates x : ${x} and y : ${y}`;
+  }
+    
+    // Task 2
+
+//    function myFunction(){
+//     let userName = prompt("Your Name");
+
+//     if(userName != null){
+//     document.getElementById('spanPrompt').innerHTML = "Hi" + ' ' + userName ;
+//     }
+//    }
+
+    
+    // Task 1
+
+    // let spanColor=document.getElementById('spanColor');
+
+    // spanColor.addEventListener('mouseover', function(event){
+    //     console.log(event);
+    //     spanColor.style.color = 'red';
+    // })
+
+    // spanColor.addEventListener('mouseout', function(event){
+    //     spanColor.style.color = 'black';
+    // })
+
+
+    
+    
+</script>
+
+</body>
+</html>
