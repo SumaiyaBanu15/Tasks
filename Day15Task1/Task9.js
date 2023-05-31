@@ -1,50 +1,36 @@
+const form = document.getElementById('myForm');
+    const table = document.getElementById('myTable');
 
-// Add an event listener to the submit button                                        
-document.querySelector('.button').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the form from submitting
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
 
-    // Get the form input values
-    let firstName = document.getElementById('name1').value;
-    let lastName = document.getElementById('name2').value;
-    let email = document.getElementById('mail').value;
-    let gender = document.querySelector('input[name="performance"]:checked').value;
-    let state = document.getElementById('state').value;
-    let country = document.getElementById('country').value;
-    let pincode = document.getElementById('pincode').value;
-    let favoriteFoods = [];
-    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    checkboxes.forEach(function(checkbox) {
-        favoriteFoods.push(checkbox.nextSibling.textContent);
+        const firstName = document.getElementById('name1').value;
+        const lastName = document.getElementById('name2').value;
+        const mail = document.getElementById('mail').value;
+        const gender = document.querySelector('input[name="performance"]:checked').value;
+        const state = document.getElementById('state').value;
+        const country = document.getElementById('country').value;
+        const pincode = document.getElementById('pincode').value;
+        const food = [...document.querySelectorAll('input[type="checkbox"]:checked')].map(checkbox => checkbox.value);
+
+        const newRow = table.insertRow(-1);
+        const cell1 = newRow.insertCell(0);
+        const cell2 = newRow.insertCell(1);
+        const cell3 = newRow.insertCell(2);
+        const cell4 = newRow.insertCell(3);
+        const cell5 = newRow.insertCell(4);
+        const cell6 = newRow.insertCell(5);
+        const cell7 = newRow.insertCell(6);
+        const cell8 = newRow.insertCell(7);
+
+        cell1.innerHTML = firstName;
+        cell2.innerHTML = lastName;
+        cell3.innerHTML = mail;
+        cell4.innerHTML = gender;
+        cell5.innerHTML = state;
+        cell6.innerHTML = country;
+        cell7.innerHTML = pincode;
+        cell8.innerHTML = food.join(', ');
+
+        form.reset();
     });
-
-    // Create a new row in the table
-    let table = document.querySelector('.getUserInput');
-    let newRow = table.insertRow(-1);
-    let cells = [
-        firstName,
-        lastName,
-        email,
-        gender,
-        state,
-        country,
-        pincode,
-        favoriteFoods.join(', ')
-    ];
-
-    // Append the form values to the new row
-    cells.forEach(function(cellData) {
-        let newCell = newRow.insertCell();
-        newCell.textContent = cellData;
-    });
-
-    // Clear the form fields
-    document.getElementById('name1').value = '';
-    document.getElementById('name2').value = '';
-    document.getElementById('mail').value = '';
-    document.getElementById('state').value = '';
-    document.getElementById('country').value = '';
-    document.getElementById('pincode').value = '';
-    checkboxes.forEach(function(checkbox) {
-        checkbox.checked = false;
-    });
-});
